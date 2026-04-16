@@ -14,8 +14,10 @@ import { errorHandler } from "./src/utils/errorHandler.js"
 import { attachUser } from "./src/utils/attachUser.js"
 
 dotenv.config()
-app.set('trust proxy', true);
+
 const app = express()
+app.set('trust proxy', true)
+
 
 // CORS
 app.use(cors({
